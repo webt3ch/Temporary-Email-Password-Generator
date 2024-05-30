@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email e Password Generator</h1>
+        <button onclick="generateCredentials()">Genera Credenziali</button>
+        <div id="credentials"></div>
+        <h2>Messaggi Ricevuti</h2>
+        <div id="messages"></div>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="messageInput" placeholder="Inserisci un messaggio...">
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
